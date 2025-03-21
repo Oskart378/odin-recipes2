@@ -1,0 +1,66 @@
+body {
+    height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    background: linear-gradient(45deg, #ff0000, #ff4500, #ff6347, #ffd700, #fff8dc);
+    background-size: cover; /* Ensure the gradient covers the entire body */   
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    background-color: black;
+    color: orange;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.menu_recipe {
+    text-decoration: none;
+    color: orange;
+}
+
+.menu_options {
+    background-color: rgb(61, 55, 55);
+    padding: 40px 40px;
+    margin: 0 auto;
+    width: 280px;
+    
+}
+
+ .menu_options li {
+    position: relative;
+    padding-left: 20px; /* Space for the icon */
+  }
+
+.menu_options li::before {
+    content: ''; /* Empty content */
+    position: absolute;
+    left: 0; /* Position the icon to the left of the list item */
+    top: 50%;
+    transform: translateY(-70%); /* Vertically center the icon */
+    width: 25px; /* Icon width */
+    height: 25px; /* Icon height */
+     /* Replace with your icon URL */
+    background-size: cover; /* Ensures the icon scales properly */
+    background-repeat: no-repeat; /* Prevents repeating the icon */
+  }
+
+.first_li::before {
+    background-image: url('../images/food.png');
+}
+
+.second_li::before {
+    background-image: url('../images/small-dried-fish.png');   
+}
+
+.third_li::before {
+    background-image: url('../images/dried-fish.png');   
+}
+
+li {
+    margin: 20px;
+}
