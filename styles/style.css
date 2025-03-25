@@ -14,12 +14,13 @@ h1, h2 {
     color: orange;
 }
 
-ul, ol {
+ul {
     text-align: center;
     list-style: none;
     text-decoration: none;
     justify-content: center;
 }
+
 
 .menu_recipe {
     text-decoration: none;
